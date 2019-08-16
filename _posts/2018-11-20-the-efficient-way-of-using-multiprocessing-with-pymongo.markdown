@@ -21,6 +21,8 @@ Forks and processes are all concepts of multiprocessing and would be a long topi
 
 Using this principle you can write a simple program using python’s multiprocessing module,
 
+{% gist 4363e1e4a4a7b71512da1253f4170b73 %}
+
 This seems pretty neat except that it takes a lot of time. The reason for that? That the every process is creating a new client and that is being done for every document. So for 120,000 documents the calculate function is called 120,000 times and spawning 120,000 clients. Each client is just making one call to the mongo db database. PEven though these 120,000 calls are shared between 8 processors it is still quite slow. So what can be done so that we can use all 8 processors, but not make a new client for every function call. That’s right, we need to divide these calls among clients and enable every client to handle multiple calls. In other words, we need to create chunks from our input.
 
 ### Chunking
@@ -31,8 +33,11 @@ The logic is pretty simple. If we chunk our input into blocks and only create on
 cl = MongoClient('localhost') #make sure the name of this client is different from the one used inside the function  
 db = cl.db\_name  
 collection = db['table\_name']  
-document\_ids = collection.find().distinct('\_id') #list of all idsNow we write a function to chunk this list
+document\_ids = collection.find().distinct('\_id') #list of all ids
 ```
+Now we write a function to chunk this list
+
+{% gist 4a3b21a682ab62496b7bc35ec506dffe %}
 
 This code does exactly the same thing we were doing with the first simple method but using chunking. Now the calls to the chunking function are parallelised instead of calls to the mongodb directly. Hence, this takes much lesser time.
 
