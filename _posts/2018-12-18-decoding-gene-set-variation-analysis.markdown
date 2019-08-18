@@ -2,6 +2,7 @@
 layout:	post
 title:	"Decoding Gene Set Variation Analysis"
 date:	2018-12-18
+featured-image: 1*ljqD-GF0lhTTylyYYSxIgQ.png
 ---
 
 ### Characterising biological pathways from gene expression data

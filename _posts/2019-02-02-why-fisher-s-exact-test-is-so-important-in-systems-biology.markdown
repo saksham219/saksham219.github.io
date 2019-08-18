@@ -2,6 +2,7 @@
 layout:	post
 title:	"Why Fisher's exact test is so important in systems biology?"
 date:	2019-02-02
+featured-image: 0*opA4OAAkr68soFwh.png
 ---
 
   ![](/img/0*opA4OAAkr68soFwh.png)

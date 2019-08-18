@@ -2,6 +2,7 @@
 layout:	post
 title:	"The efficient way of using multiprocessing with pymongo"
 date:	2018-11-20
+featured-image: 1*F0pBSUqAuDdtfPMncXssBQ.jpeg
 ---
 
   ![](/img/1*F0pBSUqAuDdtfPMncXssBQ.jpeg)

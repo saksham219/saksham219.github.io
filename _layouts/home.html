@@ -21,6 +21,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
+	{% if post.featured-image %}{% include post-featured-image.html image=post.featured-image alt=post.featured-image-alt %}{% endif %}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
