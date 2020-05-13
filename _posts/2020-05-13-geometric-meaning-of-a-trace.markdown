@@ -1,3 +1,9 @@
+---
+layout:	post
+title:	"Why Fisher's exact test is so important in systems biology?"
+date:	2019-02-02
+featured-image: https://cdn-images-1.medium.com/max/2000/1*StmC9LQmrufcA2eRWcao5A.png
+---
 
 # Geometric meaning of a trace
 
