@@ -2,7 +2,7 @@
 layout:	post
 title:	"Geometric meaning of a trace"
 date:	2020-05-13
-featured-image: https://cdn-images-1.medium.com/max/2000/1*7HigpZW0KQtNNaAqCUmaCA.png
+featured-image: "https://cdn-images-1.medium.com/max/2000/1*YE-jwx6LN19A88PfR_-Fjg.png"
 ---
 
 # Geometric meaning of a trace
