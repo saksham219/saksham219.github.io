@@ -64,3 +64,6 @@ Now, that’s a weird looking function. On closer inspection it makes sense, as 
 As a final animation, I will try to point the value this function outputs at each x in the domain (R¹), to show that it actually assumes one value at each point thus showing that the function does indeed converge at every x thus also being continuous at every x. The moving marker in the animation below is the value the function converges to (infinity assumed to be 500) at every x.
 
 ![](https://cdn-images-1.medium.com/max/2000/1*C3DHdAWAEAeoy_SyyEXwsg.gif)
+
+
+* You can play around with the visualisations used in this post * (here)[https://www.desmos.com/calculator/uyds80silz]
