@@ -66,4 +66,4 @@ As a final animation, I will try to point the value this function outputs at eac
 ![](https://cdn-images-1.medium.com/max/2000/1*C3DHdAWAEAeoy_SyyEXwsg.gif)
 
 
-* You can play around with the visualisations used in this post * (here)[https://www.desmos.com/calculator/uyds80silz]
+*You can play around with the visualisations used in this post* [here](https://www.desmos.com/calculator/uyds80silz).
