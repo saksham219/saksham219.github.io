@@ -1,11 +1,9 @@
 ---
 layout: page
-title: About me 
+title: About the blog
 permalink: /about/
 ---
 
-## I am Saksham.
-I'm a Data Scientist at a computational biology company. I like building stuff and solving problems. When the stuff includes data and the problems can be solved using mathematics, I am more than just interested.
+Thoughts about topics from math.
 
-If you would like to chat, send over an e-mail.
-
+If you would like to chat, send an [email](mailto:saksham2196@gmail.com).
