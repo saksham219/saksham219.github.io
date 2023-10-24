@@ -2,7 +2,7 @@
 layout: post
 title: "A simple introduction to the Koopman operator"
 date: 2023-10-13
-featured-image: trace.png
+featured-image:
 ---
 
 The Koopman framework has become increasingly popular for studying dynamical systems. It was first introduced by Koopman and Von Neumann, who showed that each system can be associated with a linear operator {%cite von_neumann%}, {% cite bernard_koopman %}. The operator, when applied to complex-valued functions of the system states, results in the functions evaluated at a future state. Therefore, the dynamics can be studied in the function space instead of the state space. Thus, the Koopman operator framework is understood as studying the dynamics of observables instead of the dynamics of states. The Koopman operator is formulated as an operator that advances the observable’s value. Moreover, the linear nature of the operator makes it tractable for finite-dimensional matrix approximations. The Koopman framework addresses the challenge of dealing with non-linear dynamical systems. The classical geometric perspective allows analysis techniques to only be applied in the neighbourhood of fixed points, periodic orbits, and attractors of these non-linear systems by using local linearisations {% cite glendinning_1994 %}. The Koopman framework presents a global analysis of the system, thereby allowing for prediction and control away from fixed points and periodic orbits.
