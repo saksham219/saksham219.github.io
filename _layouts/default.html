@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 
-  {%- include head.html -%}
+<script>
+  MathJax = {
+    loader: { load: ['[tex]/newcommand'] },
+    tex: {
+      inlineMath: [['$', '$']],
+      packages: { '[+]': ['newcommand'] }
+    }
+  };
+</script>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  <body>
+{%- include head.html -%}
 
-    {%- include header.html -%}
+<body>
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  {%- include header.html -%}
 
-    {%- include footer.html -%}
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
 
-  </body>
+  {%- include footer.html -%}
+
+</body>
 
 </html>
