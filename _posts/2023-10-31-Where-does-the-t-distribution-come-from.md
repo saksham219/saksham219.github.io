@@ -41,7 +41,7 @@ $$
 t(X) = \dfrac{\bar{X} - \mu_0}{\sigma/\sqrt{n}} \approx  \dfrac{\bar{X} - \mu_0}{s/\sqrt{n}}
 $$
 
-where $s$ is the sample standard deviation.
+where $s$ is the sample standard deviation. The motivation for this statistic comes from computing the difference in sample and population means, and correcting for "noise" in the sample by dividing by the sample standard deviation.
 
 **However, the population standard deviation $\sigma$ is unknown. A solution to this is approximating $\sigma$ with the sample standard deviation $s$. This approach works if the $n$ is large as $s$ converges to $\sigma$ in the large data limit. However, if $n$ is small, the approximation is not good and we need a diffferent way of getting the null distribution. This is where the t-distribution comes in.**
 
