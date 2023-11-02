@@ -86,4 +86,4 @@ $$
 
 the null distribution is $t_{n-1}$ and can be used to calculate the p-value. Using this, the large $n$ assumption is not needed, and the t-test can be applied to samples with low number of observations.
 
-To summarise, if we assume our observations to be normally distributed, we get a quantity $\dfrac{n-1}{\sigma^2}s^2$ that has a $chi^2$ distribution by definition, and using the resulting statistic as defined above follows a t-distribution that can be used for calculating the p-value.
+To summarise, if we assume our observations to be normally distributed, we get a quantity $\dfrac{n-1}{\sigma^2}s^2$ that has a $\chi^2$ distribution by definition, and using the resulting statistic as defined above follows a t-distribution that can be used for calculating the p-value.
