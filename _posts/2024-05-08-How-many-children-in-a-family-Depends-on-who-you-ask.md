@@ -12,17 +12,17 @@ American fertility fluctuated dramatically in the decades surrounding the Second
 </div>
 
 \\
-To understand this phenomenon we need to understand how **length-biased sampling** works and how the sampling method can influence an estimates of a statistic. I will attempt to explain this from a probabilistic point of view by drawing samples and calculating the expected values for the number of children in a family. Before jumping onto the probablistic view, let's understand intuitively how the sample collection method influences an estimate.
+To understand this phenomenon we need to understand how **length-biased sampling** works and how the sampling method can influence an estimate of a statistic. I will attempt to explain this from a probabilistic point of view by drawing samples and calculating the expected values for the number of children in a family. Before jumping onto the probablistic view, let's understand intuitively how the sample collection method influences an estimate.
 
 ### Pauline asks parents; Chris asks children
 
-Let's assume that we need to estimate the average family size of a neighbourhood at a particular point of time i.e. we assume that the children in a family are not becoming parents, and that a 'family' consists of parents and children (and possibly no children) only. To estimate the size of the family, we get two surveyors - Pauline and Chris. Pauline decides to go to each home and talk to the parent(s)whereas Chris stalks the children in the neighbourhood park everyday. They both ask the same question:
+Let's assume that we need to estimate the average family size of a neighbourhood at a particular point of time i.e. we assume that the children in a family are not becoming parents, and that a 'family' consists of parents and children (and possibly no children) only. To estimate the size of the family, we get two surveyors - Pauline and Chris. Pauline decides to go to each home and talk to the parent(s)whereas Chris stalks the children in the neighbourhood park every day. They both ask the same question:
 
 **_How many children are there in your family?_**
 
 After a week, they come back with their collected datasets. The first question we can ask is-- _Whose dataset has more rows?_
 
-Clearly, Chris has a much bigger dataset because he has the response of each child of the neighbourhood while Pauline has the response of each parent only. As every parent is expected to have zero or more children, Chris will have more responses. Essentially, both have collected the same dataset but represented in a different way. It's possible to reconstruct Chris' dataset from Pauline's dataset and vice-versa.
+Clearly, Chris has a much bigger dataset because he has the response of each child of the neighbourhood while Pauline has the response of each parent only. As every parent is expected to have zero or more children, Chris will have more responses. Essentially, both have collected the same dataset but represented differently. It's possible to reconstruct Chris' dataset from Pauline's dataset and vice-versa.
 
 <table>
 <caption>Pauline's dataset: using parent responses, and
@@ -76,9 +76,9 @@ The two averages are different but answering the same question. *This simply say
 
 ### Can we foresee this with expected values?
 
-Now, let's try to understand this phenomenon from a probabalistic point of view. In a population study, the estimate of the statistic "average number of average children in a family in this neighbourhood" is random. Another way of thinking about it is to ask, if we picked a random family or child in the neighborhood, what would be the number of children in that family? This is _random_ (as we're choosing randomly). We can denote this using a random variable, and calculate probabilities of the random variable taking on different values.
+Now, let's try to understand this phenomenon from a probabalistic point of view. In a population study, the estimate of the statistic "average number of average children in a family in this neighbourhood" is random. Another way of thinking about it is to ask if we picked a random family or child in the neighborhood, what would be the number of children in that family? This is _random_ (as we're choosing randomly). We can denote this using a random variable, and calculate probabilities of the random variable taking on different values.
 
-We denote $n_k$ to be the number of families in our population with exactly $k$ children. ($k \in \mathbb{N}\cup{0}$). This also means that that there are $\sum_{k=0}^{\infty} k n_k$ children in total.
+We denote $n_k$ to be the number of families in our population with exactly $k$ children. ($k \in \mathbb{N}\cup{0}$). This also means that there are $\sum_{k=0}^{\infty} k n_k$ children in total.
 
 We then define two random variables:
 
@@ -90,7 +90,7 @@ As we don't have any data about the neighbourhood, we can assume that both $F, C
 $$
 \begin{align*}
     P(F=k) = \dfrac{n_k}{\sum\limits_{k=0}^\infty n_k} = \frac{n_k}{m_0},\\
-    P(C=k) = \dfrac{k n_k}{\sum\limits_{k=0}^\infty k n_k} = \frac{k n_k}{m_1}.
+    P(C=k) = \dfrac{k n_k}{\sum\limits_{k=0}^\infty k n_k} = \frac{k n_k}{m_1},
 \end{align*}
 $$
 
@@ -137,7 +137,7 @@ $$
 In the numerator of the above expression, coefficient of $n_k$ for $k=0...q$, is given by
 
 $$
-k^2 + (q+1) [(q+1) - 2k]
+k^2 + (q+1) [(q+1) - 2k],
 $$
 
 which is positive for all $k = 0...q$ and $q \geq 2 $. Therefore, we get,
@@ -169,7 +169,7 @@ $$
 This just means that for both eras, the expected family size while sampling with children will be greater than the expected family size while sampling with families.
 
 But can we compare expected values across different eras? Making a comparison of expected values will not make much sense without actual values. In general, we now know that during the Great Depression, families were either too large or too big, and during the Baby Boom family sizes were more uniformly distributed.
-In both cases, asking children would lead to a larger family size but the Great Depression samples would have this effect pronounced more than the Baby Boom. Why? Because the children samples weigh each sample by the family size, and because of this large family sizes increase those weights more, thereby increasing the expected value. During the Baby Boom, family sizes were more uniform so the effect of this weighting is not pronounced.
+In both cases, asking children would lead to a larger family size, but the Great Depression samples would have this effect pronounced more than the Baby Boom. Why? Because the children samples weigh each sample by the family size, and because of this large family sizes increase those weights more, thereby increasing the expected value. During the Baby Boom, family sizes were more uniform so the effect of this weighting is not pronounced.
 Therefore, we **may** see the effect:
 
 $$
@@ -185,13 +185,13 @@ $E(F_{\text{depression}}) < E(F_{\text{boom}}) < E(C_{\text{boom}}) < E(C_{\text
 
 _This would perfectly explain the puzzle._ As the _cross-era_ relation can't be seen arithmetically, let's simulate the samples from the two eras.
 
-We can consider the example shown in the figure, where the frequency histogram is for a sample generated from the Great Depression and the Baby Boom. In both cases, the sample size is around 2000 families. It can be seen that the during the Great Depression, family sizes are on the extremes and during the Baby Boom, they are more uniformly distributed. This captures our assumption about the the population during the two eras.
+We can consider the example shown in the figure, where the frequency histogram is for a sample generated from the Great Depression and the Baby Boom. In both cases, the sample size is around 2000 families. It can be seen that the during the Great Depression, family sizes are on the extremes and during the Baby Boom, they are more uniformly distributed. This captures our assumption about the population during the two eras.
 
 ![img](/img/dep_samp.png)
 
 ![img](/img/boom_samp.png)
 
-The above figures show the frequency distributions when the samples are generated by asking a parent in the family but what happens whent the samples are generated by asking the children. Figure shows hwo the two distributions change. In both eras, the child sample histogram is majorly skewed to the right. This is expected because children from large families will be overrepresented in the sample. We can also calculate the expected values for the four random variables. They are plotted in the histograms with dotted lines.
+The above figures show the frequency distributions when the samples are generated by asking a parent in the family but what happens when the samples are generated by asking the children. Figure shows how the two distributions change. In both eras, the child sample histogram is majorly skewed to the right. This is expected because children from large families will be overrepresented in the sample. We can also calculate the expected values for the four random variables. They are plotted in the histograms with dotted lines.
 
 ![img](/img/gd_fam_child_sampling.png)
 ![img](/img/boom_fam_child_sampling.png)
