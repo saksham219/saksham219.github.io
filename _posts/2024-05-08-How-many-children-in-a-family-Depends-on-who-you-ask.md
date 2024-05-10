@@ -169,7 +169,7 @@ $$
 This just means that for both eras, the expected family size while sampling with children will be greater than the expected family size while sampling with families.
 
 But can we compare expected values across different eras? Making a comparison of expected values will not make much sense without actual values. In general, we now know that during the Great Depression, families were either too large or too big, and during the Baby Boom family sizes were more uniformly distributed.
-In both cases, asking children would lead to a larger family size, but the Great Depression samples would have this effect pronounced more than the Baby Boom. Why? Because the children samples weigh each sample by the family size, and because of this large family sizes increase those weights more, thereby increasing the expected value. During the Baby Boom, family sizes were more uniform so the effect of this weighting is not pronounced.
+In both cases, asking children would lead to a larger family size, but the Great Depression samples would have this effect pronounced more than the Baby Boom. Why? Because the children samples weigh each sample by the family size, and because of this large family sizes increase those weights more, thereby increasing the expected value. During the Baby Boom, family sizes were more uniform, so the effect of this weighting is not pronounced.
 Therefore, we **may** see the effect:
 
 $$
@@ -203,3 +203,4 @@ There are other examples where length-biased sampling shows up. Some examples ar
 References:
 
 {% bibliography --file children%}
+Code for the sampling and plots is available [here](https://github.com/saksham219/saksham219.github.io/blob/master/notebooks/family_size.ipynb).
