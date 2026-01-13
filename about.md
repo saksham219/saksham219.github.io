@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This blog is a collection of my thoughts about topics from math, statistics and data science.
-I received an MSc in Applied Mathematics from the Technical University of Munich and worked as a Data Scientist at [Elucidata](https://www.elucidata.io) for three years.
+This blog collects my thoughts on topics in math, statistics, and data science.
 
-If you would like to chat, send an [email](mailto:saksham2196@gmail.com).
+Currently, I work as a Data Scientist at [PriceLabs](https://hello.pricelabs.co/dynamic-pricing/), developing dynamic pricing algorithms for short-term rentals.I received an MSc in Applied Mathematics from the Technical University of Munich. Previously, I worked as a Data Scientist at [Elucidata](https://www.elucidata.io) for three years, applying machine learning and statistical methods to large-scale biological datasets.
+
+If you'd like to chat, send an [email](mailto:saksham2196@gmail.com).
